@@ -1,3 +1,8 @@
+img, picture, video {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -52,8 +57,10 @@ nav a:hover {
 }
 
 #hero h2 {
-  font-size: 3rem;
+  
   margin-bottom: 1rem;
+  font-size: calc(1.5rem + 4vw);
+  line-height: 1.2;
 }
 
 .subtext {
@@ -66,7 +73,7 @@ nav a:hover {
   background: #F97316;
   color: white;
   padding: 0.75rem 1.5rem;
-  border-radius: 6px;
+  border-radius: 0.375rem;
   display: inline-block;
   text-decoration: none;
 }
@@ -74,7 +81,7 @@ nav a:hover {
 
 .card {
   background: #1E293B;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   padding: 1rem;
 }
 
@@ -90,8 +97,8 @@ nav a:hover {
 
 .container-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(13.75rem, 1fr));
+  gap: 1.25rem;
   width: 100%;
   padding: 1rem;
 }
@@ -100,4 +107,44 @@ footer {
     text-align: center;
     padding: 2rem;
     color: #64748b;
+}
+
+
+
+.menu-toggle {
+    display: block; 
+    background: none;
+    border: none;
+    color: #F97316;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.main-nav {
+    display: none; 
+}
+
+
+@media (max-width: 30rem) {
+    .slogan {
+        display: none;
+    }
+}
+
+
+
+@media (min-width: 40rem) {
+    .menu-toggle {
+        display: none; 
+    }
+
+    .main-nav {
+        display: block; 
+    }
+
+    .main-nav ul {
+        display: flex;
+        gap: 1.5rem;
+        list-style: none;
+    }
 }
