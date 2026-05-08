@@ -50,10 +50,24 @@ nav a:hover {
 
 
 #hero {
-  padding: 4rem 2rem;
-  background: #1E293B;
-  text-align: center;
 
+  padding: 5rem 2rem;
+  background: #1E293B;
+  margin-bottom: 2rem;
+
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  justify-content: center;
+  text-align: center;
+}
+
+#hero img {
+  max-width: 100%;    
+  width: 400px;      
+  height: auto;
+  border-radius: 12px; 
+  margin: 1.5rem 0;   
 }
 
 #hero h2 {
@@ -62,6 +76,8 @@ nav a:hover {
   font-size: calc(1.5rem + 4vw);
   line-height: 1.2;
 }
+
+
 
 .subtext {
  font-size: 1rem;
